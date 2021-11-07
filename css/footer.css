@@ -1,0 +1,244 @@
+@import 'colors-and-basic-settings.css';
+
+/* -------------------FOOTER----(Get in touch!)-------------- */
+
+footer {
+    background: #2E2E2E;
+    padding: 2.5rem;
+}
+
+footer>article {
+    text-align: center;
+    font-weight: 400;
+}
+
+footer>article h2 {
+    color: var(--orange-text-button);
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.75rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+footer>article p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.13rem;
+    color: #ffffff;
+}
+
+footer>section {
+    margin: 10vh 0;
+    position: relative;
+}
+
+.footer-orange {
+    height: 90vh;
+    width: 80vw;
+    background: var(--orange-bg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-form-wrapper {
+    min-height: 95vh;
+    width: 75vw;
+    background: #ffffff;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 2.2rem 1rem 1rem;
+}
+
+.footer-form-wrapper article {
+    margin-bottom: 5vh;
+}
+
+.footer-form-wrapper div {
+    font-weight: 900;
+    padding-bottom: 1.2rem;
+}
+
+.footer-form-wrapper div:last-child {
+    padding-bottom: 0;
+}
+
+.footer-form-wrapper div i {
+    color: var(--orange-text-button);
+}
+
+.footer-form-wrapper form {
+    padding: 1.8rem 0;
+}
+
+.footer-form-wrapper input,
+.footer-form-wrapper textarea {
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5vh;
+    padding: 0.4rem 0.3rem;
+}
+
+.footer-form-wrapper small {
+    display: none;
+    color: red;
+    font-weight: 700;
+    font-size: inherit;
+    margin: 0.2vh auto 0;
+    position: relative;
+    bottom: 1.2vh;
+}
+
+.footer-form-wrapper textarea {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+}
+
+.footer-form-wrapper button {
+    background: var(--orange-text-button);
+    color: #ffffff;
+    border: 2px solid var(--orange-text-button);
+    font-size: 1rem;
+    letter-spacing: 0.14rem;
+    width: 140px;
+    height: 45px;
+}
+
+.footer-form-wrapper button:hover {
+    background: #ffffff;
+    color: var(--orange-text-button);
+    transition: all 300ms ease
+}
+
+footer nav {
+    margin: 0 auto;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+footer a:hover {
+    color: var(--orange-text-button);
+}
+
+
+/* ----------Modal---------- */
+
+.footer-modal-section {
+    display: none;
+    background: #2E2E2E;
+    width: 100%;
+    min-height: 69.57vh;
+}
+
+.footer-modal {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-modal h2,
+.footer-modal p {
+    text-align: center;
+}
+
+.footer-modal h2 {
+    color: var(--orange-text-button);
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+.footer-modal p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+
+.footer-modal button {
+    background: var(--orange-text-button);
+    color: #ffffff;
+    border: 2px solid var(--orange-text-button);
+    font-size: 1rem;
+    letter-spacing: 0.14rem;
+    width: 140px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-modal button:hover {
+    background: #2E2E2E;
+    color: var(--orange-text-button);
+    transition: all 300ms ease
+}
+
+
+/* ------------------------Tablet view------------------------- */
+
+@media only screen and (min-width: 768px) {
+    .footer-orange {
+        height: 50vh;
+        width: 79vw;
+    }
+    .footer-form-wrapper {
+        min-height: 60vh;
+        display: flex;
+    }
+    .footer-form-wrapper div {
+        padding-bottom: 2.8rem;
+        padding-right: 0.5rem;
+    }
+    .footer-form-wrapper div:last-child {
+        padding-bottom: 0;
+    }
+    .footer-form-wrapper form {
+        width: 55%;
+        padding-left: 0.8rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-form-wrapper small {
+        margin: 0.2vh auto 0;
+    }
+    .footer-form-wrapper article {
+        margin-bottom: 0;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+/* -------------------Laptop view------------------ */
+
+@media only screen and (min-width: 1000px) {
+    .footer-form-wrapper div {
+        padding-right: 2.3rem;
+        padding-bottom: 3.2rem;
+    }
+    .footer-form-wrapper form {
+        padding: 1.58rem 0;
+    }
+    .footer-form-wrapper input,
+    .footer-form-wrapper textarea {
+        margin-bottom: 2vh;
+    }
+    .footer-form-wrapper small {
+        margin: 0 auto;
+    }
+}

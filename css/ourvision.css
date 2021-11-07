@@ -1,0 +1,216 @@
+@import 'colors-and-basic-settings.css';
+html {
+    scroll-behavior: smooth;
+}
+
+#ourvision-header {
+    background-image: url('https://images.unsplash.com/photo-1531685250784-7569952593d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80');
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#ourvision-header nav {
+    padding: 5px 0 2px;
+}
+
+.ourvision-imglogo {
+    height: 35px;
+    width: 38px;
+    margin-left: 21px;
+}
+
+.ourvision-imglogo-getintouch {
+    height: 35px;
+    width: 38px;
+    position: absolute;
+    right: 21px;
+}
+
+#ourvision-getintouch-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    right: 73px;
+    top: 8px;
+}
+
+.top-link-holder {
+    display: inline-block;
+    position: relative;
+    left: 20px;
+}
+
+.ourvision-imglogo-top {
+    height: 35px;
+    width: 38px;
+}
+
+#ourvision-top-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    bottom: 9px;
+    margin-left: 10px;
+}
+
+#ourvision-aboutus-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10px;
+    position: relative;
+    bottom: 9px;
+}
+
+.ourvision {
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1564171483579-42b274152bef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1959&q=80');
+    min-height: 50vh;
+    padding: 1px;
+}
+
+.ourvision h1 {
+    width: 95%;
+    -webkit-text-fill-color: var(--orange-text-button);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin: 7.4vh auto;
+    margin-top: 105px;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+
+/*-------------Card-section--------------*/
+
+.card-content-section {
+    padding: 1rem 0;
+    background-image: url('https://images.unsplash.com/photo-1531824475211-72594993ce2a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+}
+
+.card-holder {
+    padding: 1rem 0;
+}
+
+.card-holder p {
+    margin: 0.5rem;
+    font-weight: 700;
+    color: var(--orange-bg);
+}
+
+.img-holder {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.5em;
+    background: whitesmoke;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 2px 5px 5px 1px rgba(30, 30, 30, 0.3);
+}
+
+img {
+    width: 100%;
+}
+
+.text-holder {
+    width: 95%;
+    margin: 0 auto;
+    background: whitesmoke;
+    text-align: center;
+    padding: 8px 0 20px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 2px 5px 5px 1px rgba(30, 30, 30, 0.3);
+}
+
+.city {
+    padding-bottom: 0.2rem;
+}
+
+span {
+    font-weight: bold;
+    color: var(--orange-bg);
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+
+/*---------------Tablet---------------*/
+
+@media only screen and (min-width: 768px) {
+    .ourvision h1 {
+        margin: 9vh auto;
+        margin-top: 115px;
+    }
+    .card-content-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-holder {
+        width: 50%;
+    }
+    .card-holder:hover {
+        transform: scale(1.07, 1.07);
+        transition: all 0.8s ease-in 0.5s;
+    }
+}
+
+
+/* --------------Laptop-------------- */
+
+@media only screen and (min-width: 1000px) {
+    .ourvision h1 {
+        margin: 9vh auto;
+        margin-top: 122px;
+    }
+    .ourvision h1 {
+        font-size: 2.8rem;
+    }
+    .card-holder {
+        width: 33.333333%;
+    }
+}
+
+
+/*------Footer------*/
+
+#footer-modal-alt-section {
+    background: transparent;
+}
+
+#footer-modal-alt-button:hover {
+    background: transparent;
+}
+
+.footer-modal-paragraphs {
+    color: #EC8035 !important;
+    -webkit-text-stroke-width: 0.4px !important;
+    -webkit-text-stroke-color: black !important;
+    font-size: 2rem !important;
+    font-weight: 450 !important;
+}
+
+#footer-modal-heading {
+    -webkit-text-stroke-width: 0.4px !important;
+    -webkit-text-stroke-color: black !important;
+}
+
+.ourvision-footer {
+    background-image: url('https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+}
+
+footer>article h2 {
+    -webkit-text-fill-color: var(--orange-bg);
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+
+.footer-nav a {
+    -webkit-text-fill-color: var(--orange-bg);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
